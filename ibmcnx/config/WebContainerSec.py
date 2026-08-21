@@ -11,6 +11,7 @@ Update:        2025-04-10
 
 License:       Apache 2.0
 '''
+import ibmcnx.appServer
 import ibmcnx.functions
 
 def getAnswer(question):
