@@ -5,8 +5,6 @@ Author:                 Klaus Bild
 E-Mail:                 klaus.bild@gmail.com
 Blog:                   http://kbild.ch
 
-Version:       8.0.14
-Date:          2026-08-21
 
 Update:        Christoph Stoettner <christoph.stoettner@stoeps.de>
 
