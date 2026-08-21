@@ -16,3 +16,9 @@ Examples:
 The fourth number is the script fix release within the same HCL Connections CR level. When scripts are changed or fixed without changing the tested Connections CR level, only the fourth number is increased.
 
 GitHub tags and releases are the source of truth for script versions.
+
+## Disclaimer
+
+This is a personal project and is not affiliated with, endorsed by, or supported by IBM or HCL. IBM, HCL, WebSphere, and HCL Connections are trademarks or registered trademarks of their respective owners.
+
+The scripts in this repository are provided to help administrators work with and configure HCL Connections environments. Use them at your own risk and test them in a non-production environment before applying them to production systems.
