@@ -33,28 +33,28 @@ def menuSec():
         # Process regular menu items
         try:
             if menuChoice == "1":
-                execfile("ibmcnx/config/j2ee/RoleBackup.py")
+                execfile("ibmcnx/config/j2ee/RoleBackup.py", globals(), globals())
                 return 1
             elif menuChoice == "2":
-                execfile("ibmcnx/config/j2ee/RoleRestore.py")
+                execfile("ibmcnx/config/j2ee/RoleRestore.py", globals(), globals())
                 return 1
             elif menuChoice == "3":
-                execfile("ibmcnx/config/j2ee/RoleAllRestricted.py")
+                execfile("ibmcnx/config/j2ee/RoleAllRestricted.py", globals(), globals())
                 return 1
             elif menuChoice == "4":
-                execfile("ibmcnx/config/j2ee/RoleAllUnrestricted.py")
+                execfile("ibmcnx/config/j2ee/RoleAllUnrestricted.py", globals(), globals())
                 return 1
             elif menuChoice == "5":
-                execfile("ibmcnx/config/j2ee/RoleGlobalMod.py")
+                execfile("ibmcnx/config/j2ee/RoleGlobalMod.py", globals(), globals())
                 return 1
             elif menuChoice == "6":
-                execfile("ibmcnx/config/j2ee/RoleMetricsReader.py")
+                execfile("ibmcnx/config/j2ee/RoleMetricsReader.py", globals(), globals())
                 return 1
             elif menuChoice == "7":
-                execfile("ibmcnx/config/j2ee/RoleMetricsReportRun.py")
+                execfile("ibmcnx/config/j2ee/RoleMetricsReportRun.py", globals(), globals())
                 return 1
             elif menuChoice == "8":
-                execfile("ibmcnx/config/j2ee/RoleSocialMail.py")
+                execfile("ibmcnx/config/j2ee/RoleSocialMail.py", globals(), globals())
                 return 1
             else:
                 print "\nInvalid selection. Please try again."
