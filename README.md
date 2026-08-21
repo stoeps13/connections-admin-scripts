@@ -1,14 +1,18 @@
 # Administration and Documentation scripts for HCL Connections
 
-Scripts are tested with latest HCL Connections version 8.0 CR14.
+These scripts are tested with HCL Connections 8.0 CR14.
 
-Additional documentation can be found on [Scripting101](http://scripting101.stoeps.de)
+Additional documentation can be found on [Scripting101](http://scripting101.stoeps.de).
 
-## Update 2026-08-21
+## Releases
 
-- Changed version number to latest HCL Connections Release which I have tested
-- Added releases, so you can download zip files with latest version number
+Release versions follow the HCL Connections version that the scripts were tested with.
 
-### Example
+Examples:
 
-- Version 8.0.14.2 means tested with Connections 8.0 CR14 Fixversion 2. The fixversion is the release number of the scripts within a CR. So when I adjust scripts I will increase the forth number.
+- `8.0.14` means the scripts were tested with HCL Connections 8.0 CR14.
+- `8.0.14.2` means the second script fix release for HCL Connections 8.0 CR14.
+
+The fourth number is the script fix release within the same HCL Connections CR level. When scripts are changed or fixed without changing the tested Connections CR level, only the fourth number is increased.
+
+GitHub tags and releases are the source of truth for script versions.
