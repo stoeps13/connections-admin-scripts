@@ -5,8 +5,8 @@ Author:        Christoph Stoettner
 Mail:          christoph.stoettner@stoeps.de
 Documentation: http://scripting101.org
 
-Version:       5.0.2
-Date:          2015-09-19
+Version:       8.0.14
+Date:          2026-08-21
 Update:        2025-03-18
 
 License:       Apache 2.0

@@ -7,8 +7,8 @@ Author:        Martin Leyrer
 Mail:          leyrer@gmail.com
 Documentation: http://scripting101.stoeps.de
 
-Version:       5.0.1
-Date:          09/19/2015
+Version:       8.0.14
+Date:          2026-08-21
 
 License:       Apache 2.0
 

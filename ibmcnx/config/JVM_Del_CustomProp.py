@@ -1,3 +1,17 @@
+'''
+IBM Connections Jython script
+
+Author:        Christoph Stoettner
+Mail:          christoph.stoettner@stoeps.de
+Documentation: http://scripting101.stoeps.de
+
+Version:       8.0.14
+Date:          2026-08-21
+
+License:       Apache 2.0
+
+'''
+
 # Jython script to remove JVM custom property 'org.eclipse.jst.j2ee.commonarchivecore.openAllArchives'
 # from deployment manager, node agents, and all application servers
 

@@ -8,8 +8,8 @@ Author:        Christoph Stoettner
 Mail:          christoph.stoettner@stoeps.de
 Documentation: http://scripting101.org
 
-Version:       5.0
-Date:          2014-10-31
+Version:       8.0.14
+Date:          2026-08-21
 
 License:       Apache 2.0
 
