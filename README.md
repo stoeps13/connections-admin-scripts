@@ -1,8 +1,13 @@
-# Administration and Documentation scripts for HCL Connections
+# Connections Admin Scripts
+
+Administration and documentation scripts for HCL Connections.
 
 These scripts are tested with HCL Connections 8.0 CR14.
 
-Additional documentation can be found on [Scripting101](http://scripting101.stoeps.de).
+Additional documentation can be found here:
+
+- [Scripting101](http://scripting101.stoeps.de)
+- [HCL Connections documentation](https://help.hcl-software.com/connections/latest/index.html)
 
 ## Releases
 
