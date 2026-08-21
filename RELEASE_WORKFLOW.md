@@ -86,6 +86,35 @@ gh release create 8.0.14.2 \
   --notes "Bugfix release for IBM Connections 8.0 CR14 scripts."
 ```
 
+## Release retention
+
+Keep published fix releases and tags. Do not delete older releases such as `8.0.14.2` after publishing a newer fix release such as `8.0.14.3`.
+
+Reasons:
+
+- Users may already have downloaded or referenced an older release.
+- Tags should be immutable.
+- Release history helps troubleshooting.
+- GitHub release notes provide a useful changelog.
+- Deleting releases or tags can break links, scripts, and reproducible deployments.
+
+Only delete a published release when it contains sensitive data, legal problems, or another serious issue that cannot be handled by a warning.
+
+When a newer fix release replaces an older one, optionally add a superseded note to the older release notes:
+
+```bash
+gh release edit 8.0.14.2 \
+  --notes "$(gh release view 8.0.14.2 --json body --jq .body)
+
+Superseded by 8.0.14.3. Kept for historical reference and reproducibility."
+```
+
+Ensure the newest release is marked as latest:
+
+```bash
+gh release edit 8.0.14.3 --latest
+```
+
 ## Changelog options
 
 ### Automatic GitHub release notes
@@ -129,7 +158,7 @@ For now, GitHub generated release notes are sufficient.
 git status
 git diff --check
 
-git add ibmcnx/config/WebContainerSec.py
+git add connections_admin/config/WebContainerSec.py
 git commit -m "Fix WebContainerSec appServer import" -m "Closes #17"
 
 git push origin master
