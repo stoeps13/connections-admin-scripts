@@ -44,25 +44,25 @@ def menuAdm():
         # Process regular menu items
         try:
             if menuChoice == "1":
-                execfile("connections_admin/cnx/VersionStamp.py")
+                execfile("connections_admin/cnx/VersionStamp.py", globals(), globals())
                 return 1
             elif menuChoice == "2":
-                execfile("connections_admin/cnx/FilesPolicies.py")
+                execfile("connections_admin/cnx/FilesPolicies.py", globals(), globals())
                 return 1
             elif menuChoice == "3":
-                execfile("connections_admin/cnx/LibraryPolicies.py")
+                execfile("connections_admin/cnx/LibraryPolicies.py", globals(), globals())
                 return 1
             elif menuChoice == "4":
-                execfile("connections_admin/cnx/LibrarySizes.py")
+                execfile("connections_admin/cnx/LibrarySizes.py", globals(), globals())
                 return 1
             elif menuChoice == "5":
-                execfile("connections_admin/cnx/LibrarySizeOverview.py")
+                execfile("connections_admin/cnx/LibrarySizeOverview.py", globals(), globals())
                 return 1
             elif menuChoice == "6":
-                execfile("connections_admin/cnx/CommunitiesReparenting.py")
+                execfile("connections_admin/cnx/CommunitiesReparenting.py", globals(), globals())
                 return 1
             elif menuChoice == "7":
-                execfile("connections_admin/cnx/ProfilesAddExtRole.py")
+                execfile("connections_admin/cnx/ProfilesAddExtRole.py", globals(), globals())
                 return 1
             else:
                 print "\nInvalid selection. Please try again."

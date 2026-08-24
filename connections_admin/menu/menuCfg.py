@@ -50,40 +50,40 @@ def menuCfg():
         # Process regular menu items
         try:
             if menuChoice == "1":
-                execfile("connections_admin/config/DataSources.py")
+                execfile("connections_admin/config/DataSources.py", globals(), globals())
                 return 1
             elif menuChoice == "2":
-                execfile("connections_admin/config/JVMHeap.py")
+                execfile("connections_admin/config/JVMHeap.py", globals(), globals())
                 return 1
             elif menuChoice == "3":
-                execfile("connections_admin/config/LogFiles.py")
+                execfile("connections_admin/config/LogFiles.py", globals(), globals())
                 return 1
             elif menuChoice == "4":
-                execfile("connections_admin/config/JVMLanguage.py")
+                execfile("connections_admin/config/JVMLanguage.py", globals(), globals())
                 return 1
             elif menuChoice == "5":
-                execfile("connections_admin/config/MonitoringPolicy.py")
+                execfile("connections_admin/config/MonitoringPolicy.py", globals(), globals())
                 return 1
             elif menuChoice == "6":
-                execfile("connections_admin/config/JVMCustProp.py")
+                execfile("connections_admin/config/JVMCustProp.py", globals(), globals())
                 return 1
             elif menuChoice == "7":
-                execfile("connections_admin/config/jvmtrace.py")
+                execfile("connections_admin/config/jvmtrace.py", globals(), globals())
                 return 1
             elif menuChoice == "8":
-                execfile("connections_admin/config/WebSessionTO.py")
+                execfile("connections_admin/config/WebSessionTO.py", globals(), globals())
                 return 1
             elif menuChoice == "9":
-                execfile("connections_admin/config/WebContainerSec.py")
+                execfile("connections_admin/config/WebContainerSec.py", globals(), globals())
                 return 1
             elif menuChoice == "10":
-                execfile("connections_admin/security/cookiesamesite.py")
+                execfile("connections_admin/security/cookiesamesite.py", globals(), globals())
                 return 1
             elif menuChoice == "11":
-                execfile("connections_admin/config/ChgDBHost.py")
+                execfile("connections_admin/config/ChgDBHost.py", globals(), globals())
                 return 1
             elif menuChoice == "12":
-                execfile("connections_admin/config/addNode.py")
+                execfile("connections_admin/config/addNode.py", globals(), globals())
                 return 1
             elif menuChoice == "13":
                 nodelist = AdminTask.listManagedNodes().splitlines()

@@ -48,37 +48,37 @@ def menuDoc():
         # Process regular menu items
         try:
             if menuChoice == "1":
-                execfile("connections_admin/doc/JVMHeap.py")
+                execfile("connections_admin/doc/JVMHeap.py", globals(), globals())
                 return 1
             elif menuChoice == "2":
-                execfile("connections_admin/doc/JVMSettings.py")
+                execfile("connections_admin/doc/JVMSettings.py", globals(), globals())
                 return 1
             elif menuChoice == "3":
-                execfile("connections_admin/doc/traceSettings.py")
+                execfile("connections_admin/doc/traceSettings.py", globals(), globals())
                 return 1
             elif menuChoice == "4":
-                execfile("connections_admin/doc/LogFiles.py")
+                execfile("connections_admin/doc/LogFiles.py", globals(), globals())
                 return 1
             elif menuChoice == "5":
-                execfile("connections_admin/doc/Ports.py")
+                execfile("connections_admin/doc/Ports.py", globals(), globals())
                 return 1
             elif menuChoice == "6":
-                execfile("connections_admin/doc/Variables.py")
+                execfile("connections_admin/doc/Variables.py", globals(), globals())
                 return 1
             elif menuChoice == "7":
-                execfile("connections_admin/doc/j2eeroles.py")
+                execfile("connections_admin/doc/j2eeroles.py", globals(), globals())
                 return 1
             elif menuChoice == "8":
-                execfile("connections_admin/doc/DataSources.py")
+                execfile("connections_admin/doc/DataSources.py", globals(), globals())
                 return 1
             elif menuChoice == "9":
-                execfile("connections_admin/doc/ProfRoleID.py")
+                execfile("connections_admin/doc/ProfRoleID.py", globals(), globals())
                 return 1
             elif menuChoice == "10":
-                execfile("connections_admin/doc/ProfilesInactive.py")
+                execfile("connections_admin/doc/ProfilesInactive.py", globals(), globals())
                 return 1
             elif menuChoice == "11":
-                execfile("connections_admin/doc/Documentation.py")
+                execfile("connections_admin/doc/Documentation.py", globals(), globals())
                 return 1
             else:
                 print "\nInvalid selection. Please try again."

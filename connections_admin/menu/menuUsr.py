@@ -42,19 +42,19 @@ def menuUsr():
         # Process regular menu items
         try:
             if menuChoice == "1":
-                execfile("connections_admin/member/CheckExID.py")
+                execfile("connections_admin/member/CheckExID.py", globals(), globals())
                 return 1
             elif menuChoice == "2":
-                execfile("connections_admin/member/DeactAndActByEmail.py")
+                execfile("connections_admin/member/DeactAndActByEmail.py", globals(), globals())
                 return 1
             elif menuChoice == "3":
-                execfile("connections_admin/member/InactivateByEmail.py")
+                execfile("connections_admin/member/InactivateByEmail.py", globals(), globals())
                 return 1
             elif menuChoice == "4":
-                execfile("connections_admin/member/InactivateByUid.py")
+                execfile("connections_admin/member/InactivateByUid.py", globals(), globals())
                 return 1
             elif menuChoice == "5":
-                execfile("connections_admin/member/SyncAllByEXID.py")
+                execfile("connections_admin/member/SyncAllByEXID.py", globals(), globals())
                 return 1
             else:
                 print "\nInvalid selection. Please try again."
