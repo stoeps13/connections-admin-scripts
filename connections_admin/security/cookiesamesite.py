@@ -20,10 +20,16 @@ if not os.path.isfile(WSADMINLIB):
 execfile(WSADMINLIB)
 
 servers=listServersOfType('APPLICATION_SERVER')
+print "Found %d application server(s)" % len(servers)
+
 for server in servers:
+    print "Updating CookieSameSite settings for %s/%s" % (server[0], server[1])
     props = []
     serverName=getServerByNodeAndName(server[0], server[1])
     objectID=getObjectsOfType('SessionManager', serverName)
+
+    if not objectID:
+        raise RuntimeError("No SessionManager found for %s/%s" % (server[0], server[1]))
 
     # Check if CookieSameSite is already set
     sesMgrProps=AdminConfig.list('Property', objectID[0]).split('\n')
@@ -43,3 +49,4 @@ for server in servers:
     AdminConfig.create('Property', objectID[0], '[[validationExpression ""] [name "HttpSessionIdReuse"] [description "Preserve sessions across apps"] [value "true"] [required "false"]]')
 
 saveAndSync()
+print "CookieSameSite configuration completed and synchronized"
