@@ -1,0 +1,19 @@
+Third-party component: wsadminlib
+
+Source:
+https://github.com/wsadminlib/wsadminlib
+
+Files included:
+- bin/wsadminlib.py
+- consumer.guidelines.txt
+
+Copyright:
+IBM Corp. 1996, 2012
+
+License:
+Apache License, Version 2.0. The license text is available at:
+https://www.apache.org/licenses/LICENSE-2.0
+
+The wsadminlib.py source header and consumer guidelines are preserved.
+This project does not claim ownership of wsadminlib or imply endorsement
+by IBM or the wsadminlib authors.

@@ -9,7 +9,15 @@
   License:       Apache 2.0
 
 '''
-execfile("connections_admin/wsadminlib/bin/wsadminlib.py")
+import os
+
+WSADMINLIB = "connections_admin/wsadminlib/bin/wsadminlib.py"
+WSADMINLIB_URL = "https://raw.githubusercontent.com/wsadminlib/wsadminlib/master/bin/wsadminlib.py"
+
+if not os.path.isfile(WSADMINLIB):
+    raise IOError("Required wsadminlib is missing: %s\nDownload it from %s" % (WSADMINLIB, WSADMINLIB_URL))
+
+execfile(WSADMINLIB)
 
 servers=listServersOfType('APPLICATION_SERVER')
 for server in servers:
