@@ -30,6 +30,9 @@ for server in servers:
 
     # Delete old CookieSameSite entries
     for prop in sesMgrProps:
+        if not prop.strip():
+            continue
+
         propName = AdminConfig.showAttribute(prop, 'name')
 
         if propName in ['CookieSameSite', 'HttpSessionIdReuse']:
