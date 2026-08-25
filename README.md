@@ -27,3 +27,11 @@ GitHub tags and releases are the source of truth for script versions.
 This is a personal project and is not affiliated with, endorsed by, or supported by IBM or HCL. IBM, HCL, WebSphere, and HCL Connections are trademarks or registered trademarks of their respective owners.
 
 The scripts in this repository are provided to help administrators work with and configure HCL Connections environments. Use them at your own risk and test them in a non-production environment before applying them to production systems.
+
+## Third-party components
+
+This repository includes `wsadminlib`, used by the CookieSameSite configuration script.
+
+- Source: https://github.com/wsadminlib/wsadminlib
+- License: Apache License 2.0
+- Attribution: `connections_admin/wsadminlib/THIRD-PARTY-NOTICES.txt`
