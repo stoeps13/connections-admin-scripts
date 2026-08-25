@@ -104,7 +104,10 @@ def setRole(appName, roleName, connwasadmin, connadmin, connmoderators, connmetr
                    connmetrics, connmetricsgroup)
     elif roleName == "reader" or roleName == "person" or roleName == "allAuthenticated" or roleName == "everyone-authenticated" or roleName == "files-owner":
         # Default Access reader, person, authenticated
-        if cnxreader == "allauthenticated":
+        if appName == "RichTextEditors" and roleName == "reader":
+            # RichTextEditors requires public access for its reader role
+            setRoleCmd(appName, roleName, "Yes", "No", "' '", "' '")
+        elif cnxreader == "allauthenticated":
             setRoleCmd(appName, roleName, "No", "Yes", "' '", "' '")
         else:
             setRoleCmd(appName, roleName, "No", "No",
