@@ -25,12 +25,13 @@ def menuCfg():
     print("\t\t[5] AppServer Monitoring Policy")
     print("\t\t[6] Set Custom Cache Parameter")
     print("\t\t[7] Set JVM Trace Settings")
-    print("\t\t[8] Set WebSession Timeout")
-    print("\t\t[9] Disable x-powered-by header") 
-    print("\t\t[10] Set CookiesSameSite")
-    print("\t\t[11] Change DB server and port")
-    print("\t\t[12] Create new Cluster members")
-    print("\t\t[13] Synchronize all nodes")
+    print("\t\t[8] Set JVM encoding properties to UTF-8")
+    print("\t\t[9] Set WebSession Timeout")
+    print("\t\t[10] Disable x-powered-by header")
+    print("\t\t[11] Set CookiesSameSite")
+    print("\t\t[12] Change DB server and port")
+    print("\t\t[13] Create new Cluster members")
+    print("\t\t[14] Synchronize all nodes")
 
     # Add common footer with shortcuts (but back isn't as useful in main menu)
     # You could use a different footer for the main menu if you prefer
@@ -71,21 +72,24 @@ def menuCfg():
                 execfile("connections_admin/config/jvmtrace.py", globals(), globals())
                 return 1
             elif menuChoice == "8":
-                execfile("connections_admin/config/WebSessionTO.py", globals(), globals())
+                execfile("connections_admin/config/JVMEncoding.py", globals(), globals())
                 return 1
             elif menuChoice == "9":
-                execfile("connections_admin/config/WebContainerSec.py", globals(), globals())
+                execfile("connections_admin/config/WebSessionTO.py", globals(), globals())
                 return 1
             elif menuChoice == "10":
-                execfile("connections_admin/security/cookiesamesite.py", globals(), globals())
+                execfile("connections_admin/config/WebContainerSec.py", globals(), globals())
                 return 1
             elif menuChoice == "11":
-                execfile("connections_admin/config/ChgDBHost.py", globals(), globals())
+                execfile("connections_admin/security/cookiesamesite.py", globals(), globals())
                 return 1
             elif menuChoice == "12":
-                execfile("connections_admin/config/addNode.py", globals(), globals())
+                execfile("connections_admin/config/ChgDBHost.py", globals(), globals())
                 return 1
             elif menuChoice == "13":
+                execfile("connections_admin/config/addNode.py", globals(), globals())
+                return 1
+            elif menuChoice == "14":
                 nodelist = AdminTask.listManagedNodes().splitlines()
                 cell = AdminControl.getCell()
                 for nodename in nodelist:
