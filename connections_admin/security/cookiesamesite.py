@@ -47,6 +47,7 @@ for server in servers:
 
     AdminConfig.create('Property', objectID[0], '[[validationExpression ""] [name "CookieSameSite"] [description "Important for Teams Integration"] [value "None"] [required "false"]]')
     AdminConfig.create('Property', objectID[0], '[[validationExpression ""] [name "HttpSessionIdReuse"] [description "Preserve sessions across apps"] [value "true"] [required "false"]]')
+    AdminConfig.create('Property', objectID[0], '[[validationExpression ""] [name "InvalidateOnUnauthorizedSessionRequestException"] [description "Important for Logout"] [value "true"] [required "false"]]')
 
 saveAndSync()
 print "CookieSameSite configuration completed and synchronized"
